@@ -24,7 +24,7 @@
 }
 
 .pot-wrap {
-  border-top: 100px solid #106d973d;
+  border-top: 100px solid rgba(133, 123, 111, 0.4);
   border-left: 25px solid white;
   border-right: 25px solid white;
   width: 50px;
@@ -33,7 +33,7 @@
 
 .pot {
   position: absolute;
-  background: #0057ff;
+  background: #2fb5ff;
   margin: -100px -25px;
   height: 100px;
   width: 100px;

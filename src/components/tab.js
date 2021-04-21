@@ -7,7 +7,7 @@ function Tab({ name, humidity, isSelected, onClick }) {
       <h2>{name}</h2>
       <div className="pot-wrap">
         <div style={{margin: `-${humidity}px -25px`, height: `${humidity}px`}} className="pot">
-          {humidity}
+          {humidity} %
         </div>
       </div>
     </div>);
