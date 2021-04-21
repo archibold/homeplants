@@ -3,23 +3,25 @@ import '/node_modules/react-vis/dist/style.css';
 import './index.css';
 import {
   XYPlot,
+  makeWidthFlexible,
   VerticalGridLines,
   HorizontalGridLines,
   XAxis,
   YAxis,
-  LineSeries
+  AreaSeries
 } from 'react-vis';
 
 function Chart({ data }) {
+  const FlexibleWidthXYPlot = makeWidthFlexible(XYPlot);
   return (
     <div className="chart">
-      <XYPlot yDomain={[20, 100]} xType="time" height={300} width= {1000}>
+      <FlexibleWidthXYPlot stroke="#2fb5ff" yDomain={[20, 100]} xType="time" height={300} >
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
-        <LineSeries data={data} />
-      </XYPlot>
+        <AreaSeries data={data} color="#2fb5ff" />
+      </FlexibleWidthXYPlot>
     </div>);
 }
 

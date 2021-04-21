@@ -57,5 +57,12 @@
 }
 
 .isSelected {
-  border: 1px solid black;
+  z-index: -10;
+  background: rgb(212, 239, 255);
+  border-radius: 5px;
+}
+
+.isSelected .pot-wrap {
+  border-left: 25px solid rgb(212, 239, 255);
+  border-right: 25px solid rgb(212, 239, 255);
 }
