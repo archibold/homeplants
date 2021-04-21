@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.chart {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  overflow: auto;
+  margin: 5px;
+  display: flex;
+}
+
+.tab {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pot-wrap {
+  border-top: 100px solid #106d973d;
+  border-left: 25px solid white;
+  border-right: 25px solid white;
+  width: 50px;
+  position: relative;
+}
+
+.pot {
+  position: absolute;
+  background: #0057ff;
+  margin: -100px -25px;
+  height: 100px;
+  width: 100px;
+  z-index: -1;
+  text-align: center;
+  color: black;
+}
+
+.isSelected {
+  border: 1px solid black;
+}
