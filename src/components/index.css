@@ -6,6 +6,8 @@
 .chart {
   display: flex;
   justify-content: center;
+  flex: 1;
+  align-items: center;
 }
 
 .tabs {
@@ -23,11 +25,18 @@
   justify-content: center;
 }
 
+.tab h2 {
+  font-weight: normal;
+  font-family: 'Roboto';
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 .pot-wrap {
   border-top: 100px solid rgba(133, 123, 111, 0.4);
   border-left: 25px solid white;
   border-right: 25px solid white;
-  width: 50px;
+  width: 100px;
   position: relative;
 }
 
@@ -39,7 +48,12 @@
   width: 100px;
   z-index: -1;
   text-align: center;
-  color: black;
+  color: rgb(7, 62, 93);
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  font-family: 'Roboto';
 }
 
 .isSelected {

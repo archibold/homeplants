@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Chart from '../components/chart';
 import Tab from '../components/tab';
 import * as service from '../services/service';
+import "../components/layout.css";
 import "../components/index.css";
 
 const IndexPage = () => {
